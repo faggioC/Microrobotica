@@ -2,7 +2,8 @@ import serial
 import pygame
 import time
 
-arduino = serial.Serial("COM3",9600)
+porta = "COM3"
+arduino = serial.Serial(porta,9600)
 time.sleep(1)
 print("Pronto...")
 pygame.init()
